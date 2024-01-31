@@ -13,4 +13,8 @@ public static int mul(int a , int b) {
 	int mul = a*b;
 	return mul;
 }
+public static double div(int a , int b) {
+	double div = (double)a/(double)b;
+	return div;
+}
 }

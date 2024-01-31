@@ -17,4 +17,17 @@ public class MathUtilsTest {
     	assertEquals(0, MathUtils.subtract(2, 2));
     	
     }
+	@Test
+    public void testDivide() {
+        assertEquals(4.0, MathUtils.div(12, 3), 0.0);
+        assertEquals(0.0, MathUtils.div(0, 5), 0.0);
+        assertEquals(3.5, MathUtils.div(7, 2), 0.0);
+    }
+//
+	@Test
+    public void testDivideByZero() {
+        assertEquals(Double.POSITIVE_INFINITY,MathUtils.div(5, 0), 0.0 );
+        assertEquals(Double.NEGATIVE_INFINITY,MathUtils.div(-3, 0), 0.0 );
+    }
 }
+
